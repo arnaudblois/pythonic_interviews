@@ -1,11 +1,19 @@
-
 from collections import Counter
+
+"""
+Problem 1.5 -- CtCI
+returns True if there is zero or one character different between string1 and
+string2.
+>>> is_one_letter_away('pale', 'ale')
+True
+>>> is_one_letter_away("Python", "Jython")
+True
+"""
 
 
 def is_one_letter_away(string1, string2):
     """
-    returns True if there is zero or one character different between string1 and
-    string2.
+
     We use the difference of counters, making sure there is at most one letter
     with a count > 0
     """

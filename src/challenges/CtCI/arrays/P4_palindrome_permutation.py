@@ -1,8 +1,17 @@
 from collections import Counter
 
+"""
+Problem 1.4 -- CtCI
+checks if a string is the permutation of a palindrom
+"""
+
 
 def palindrome_permutation(string):
     """
+    All palindromes follow the same rule, they have at most one letter whose
+    count is odd, this letter being the "pivot" of the palindrome. The letters
+    with an even count can always be permuted to match each other across the
+    pivot.
     """
     string = string.strip().lower()
     c = Counter(string)

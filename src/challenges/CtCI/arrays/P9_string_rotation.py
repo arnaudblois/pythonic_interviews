@@ -1,9 +1,10 @@
 """
-    Given two strings, check if s2 is a rotation of sl using only one
-    call to the built-in "in"
+Problem 1.9 of CtCi
+Given two strings, check if s2 is a rotation of sl using only one
+call to the built-in "in"
 
-    >>> is_rotated_string("ttleponymyli", "mylittlepony")
-    True
+>>> is_rotated_string("ttleponymyli", "mylittlepony")
+True
 """
 
 
@@ -22,7 +23,6 @@ def is_rotated_string_naive(s1, s2):
         return False
     is_rotated = False
     for shift in range(length):
-        print("comparing", s1, s2[shift:] + s2[:shift])
         is_rotated |= s1 == s2[shift:] + s2[:shift]
     return is_rotated
 

@@ -5,6 +5,7 @@ from ..sort import (
     selection_sort,
     insertion_sort,
     merge_sort, merge,
+    quick_sort,
 )
 
 
@@ -23,6 +24,7 @@ def test_empty():
     assert selection_sort(l1.copy()) == l2
     assert insertion_sort(l1.copy()) == l2
     assert merge_sort(l1.copy()) == l2
+    assert quick_sort(l1.copy()) == l2
 
 
 def test_single_element():
@@ -34,6 +36,7 @@ def test_single_element():
     assert selection_sort(l1.copy()) == l2
     assert insertion_sort(l1.copy()) == l2
     assert merge_sort(l1.copy()) == l2
+    assert quick_sort(l1.copy()) == l2
 
 
 def test_two_elements():
@@ -45,6 +48,7 @@ def test_two_elements():
     assert selection_sort(l1.copy()) == l2
     assert insertion_sort(l1.copy()) == l2
     assert merge_sort(l1.copy()) == l2
+    assert quick_sort(l1.copy()) == l2
 
 
 def test_ordered_list():
@@ -56,6 +60,7 @@ def test_ordered_list():
     assert selection_sort(l1.copy()) == l2
     assert insertion_sort(l1.copy()) == l2
     assert merge_sort(l1.copy()) == l2
+    assert quick_sort(l1.copy()) == l2
 
 
 def test_unordered_list():
@@ -67,6 +72,7 @@ def test_unordered_list():
     assert selection_sort(l1.copy()) == l2
     assert insertion_sort(l1.copy()) == l2
     assert merge_sort(l1.copy()) == l2
+    assert quick_sort(l1.copy()) == l2
 
 
 def test_duplicated_list():
@@ -78,6 +84,7 @@ def test_duplicated_list():
     assert selection_sort(l1.copy()) == l2
     assert insertion_sort(l1.copy()) == l2
     assert merge_sort(l1.copy()) == l2
+    assert quick_sort(l1.copy()) == l2
 
 
 def test_random_against_builtin():
@@ -90,3 +97,4 @@ def test_random_against_builtin():
         assert selection_sort(l.copy()) == sorted_l
         assert insertion_sort(l.copy()) == sorted_l
         assert merge_sort(l.copy()) == sorted_l
+        assert quick_sort(l.copy()) == sorted_l

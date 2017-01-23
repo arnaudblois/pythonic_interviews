@@ -22,7 +22,7 @@ def sieve_of_erathosthene(n):
     # then we comb from 3 to sqrt(n)
     for i in range(3, ceil(n**0.5), 2):
         if sieve[i]:
-            for j in range(i**2:n:i):
+            for j in range(i**2, n, i):
                 sieve[j] = False
     return [i for i in range(n) if sieve[i]]
 
