@@ -1,13 +1,13 @@
 """
-A few simple algorithms regarding primality of numbers
-
+A few simple algorithms regarding primality of numbers.
+** Section under construction **
 """
 
 
 def sieve_of_erathosthene(n):
     """
-    The sieve of Erathosthene is an efficient way to return all prime numbers up
-    to an integer n. A list of boolean is created and is used as a mask:
+    The sieve of Erathosthene is an efficient way to return all prime numbers
+    up to an integer n. A list of boolean is created and is used as a mask:
     the index corresponds to the number and the boolean to whether its prime or
     not. As we loop over the number from 2 to sqrt(n), we set to False the
     multiple of these numbers, those remaining at True are necessarily prime.

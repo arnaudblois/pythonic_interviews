@@ -4,7 +4,6 @@
 Problem 1.2 from CtCI
 Check if a string is the permutation of another
 """
-from unittest import TestCase
 from collections import Counter
 
 

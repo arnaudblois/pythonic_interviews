@@ -1,5 +1,5 @@
-from collections import Counter
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 Problem 1.5 -- CtCI
 returns True if there is zero or one character different between string1 and
@@ -9,6 +9,9 @@ True
 >>> is_one_letter_away("Python", "Jython")
 True
 """
+
+
+from collections import Counter
 
 
 def is_one_letter_away(string1, string2):

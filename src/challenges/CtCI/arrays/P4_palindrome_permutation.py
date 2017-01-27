@@ -1,9 +1,11 @@
-from collections import Counter
-
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 Problem 1.4 -- CtCI
 checks if a string is the permutation of a palindrom
 """
+
+from collections import Counter
 
 
 def palindrome_permutation(string):

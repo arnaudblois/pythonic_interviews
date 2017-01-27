@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 """
 Problem 1.9 of CtCi
 Given two strings, check if s2 is a rotation of sl using only one

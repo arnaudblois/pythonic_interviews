@@ -7,7 +7,6 @@ Note that in real life proper url encoding is a bit trickier as all characters
 have to be ASCII encoded, this is normally done with quote_plus in urllib.parse
 """
 
-from collections import Counter
 
 def urlify(string):
     """
