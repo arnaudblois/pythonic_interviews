@@ -1,3 +1,3 @@
 """
-Solutions for Chapter 8 "Recursion and dynamic programming" from CtCI
+Solutions for Chapter 4 "Trees and Graphs" from CtCI
 """
