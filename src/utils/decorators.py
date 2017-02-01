@@ -36,8 +36,7 @@ class Memoize:
         self.function = function
         self.memo = {}
 
-    def __call__(self, arg):
-        if arg not in self.memo:
-            self.memo[arg] = self.fn(arg)
-
-    return self.memo[arg]
+    def __call__(self, *arg):
+        if tuple(arg) not in self.memo:
+            self.memo[arg] = self.function(*arg)
+        return self.memo[arg]
