@@ -1,4 +1,3 @@
-from unittest import TestCase
 import random
 from ..sort import (
     bubble_sort, short_bubble_sort,
@@ -29,8 +28,8 @@ def test_empty():
 
 def test_single_element():
     """sorting a list of one element"""
-    l1 = [1,]
-    l2 = [1,]
+    l1 = [1]
+    l2 = [1]
     assert bubble_sort(l1.copy()) == l2
     assert short_bubble_sort(l1.copy()) == l2
     assert selection_sort(l1.copy()) == l2

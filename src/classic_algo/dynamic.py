@@ -62,8 +62,8 @@ def longest_common_subsequence(s1, s2):
 
 def solve_knapsack(items, max_weight):
     """
-    solves the knapsack problem: considering a list of an infinite numbers of
-    n sort of items characterised by a weight and a value (weight_i, value_i),
+    solves the knapsack problem: considering a list of an infinite number of
+    n sorts of items characterised by a weight and a value (weight_i, value_i),
     returns the list of objects that maximises the value one can put in the
     knapsack without exceeding the max_weight
     """
@@ -143,8 +143,10 @@ def change_making_bottom_up(target, coin_set):
         # If we found a minimum coin we update the best_combo and coin_count
         # (this may not be the case for some sets not containing 1)
         if minimum_coin:
-            best_combo[change] = (best_combo[change - minimum_coin] +
-                                  [minimum_coin])
+            best_combo[change] = (
+                best_combo[change - minimum_coin]
+                + [minimum_coin]
+            )
             coin_count[change] = coin_count[change - minimum_coin] + 1
 
     return best_combo[target]
@@ -154,8 +156,8 @@ def change_making_bottom_up(target, coin_set):
 def change_making_top_down(target, coin_set):
     """
     returns the minimal numbers of coins required to equal the target, or []
-    if the target cannot be reached. Note that the coin_set has to be of type
-    set or frozenset since we use memoization: the arguments must be hashable
+    if the target cannot be reached. Note that the coin_set has to be a tuple
+    or frozenset since we use memoization: the arguments must be hashable
     and a list is not.
     """
     # We sort the coins and return the trivial results (target below the

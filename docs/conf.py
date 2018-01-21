@@ -20,11 +20,11 @@
 from pathlib import Path
 import os
 import sys
+import sphinx_rtd_theme
+
 doc_dir = Path(os.path.dirname(os.path.abspath(__file__)))
 src_path = doc_dir.parent / 'src'
-#sys.path.insert(0, '/home/ursi/workspace/Python-coding-tests/src')
-sys.path.insert(0, src_path)
-
+sys.path.insert(0, os.path.abspath('..'))
 
 # -- General configuration ------------------------------------------------
 
@@ -93,9 +93,7 @@ todo_include_todos = True
 # a list of builtin themes.
 #
 #  default theme
-#html_theme = 'alabaster'
-
-import sphinx_rtd_theme
+# html_theme = 'alabaster'
 
 html_theme = "sphinx_rtd_theme"
 
@@ -170,7 +168,6 @@ texinfo_documents = [
 ]
 
 
-
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
@@ -190,5 +187,3 @@ epub_copyright = copyright
 
 # A list of files that should not be packed into the epub file.
 epub_exclude_files = ['search.html']
-
-

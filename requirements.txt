@@ -7,4 +7,4 @@ requests
 setuptools
 Sphinx
 sphinxcontrib-disqus
-
+sphinx_rtd_theme

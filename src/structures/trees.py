@@ -31,12 +31,12 @@ class BinaryTree:
     The particularity of trees is that each node can be considered the root of
     a subtree. This leads to interesting recursive properties to walk the tree.
     """
-    def __init__(root_node):
+    def __init__(self, root_node):
         self.node = root_node
         self.left_child = None
         self.right_child = None
 
-    def insert_left(new_node):
+    def insert_left(self, new_node):
         """
         Insert a new node as the left child of the tree. If there is no left
         child already, the left child is directly added as the root of a new
@@ -51,7 +51,7 @@ class BinaryTree:
             subtree.left_child = self.left_child
             self.left_child = subtree
 
-    def insert_right(new_node):
+    def insert_right(self, new_node):
         """ same as above but with the right child """
         if self.right_child is None:
             self.right_child = BinaryTree(new_node)

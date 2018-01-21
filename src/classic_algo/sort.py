@@ -162,7 +162,7 @@ def quicksort_helper(a, first, last):
 
 def partition_helper(a, first, last):
     """
-     A left_mark index are initiated at the leftmost index available (ie
+    A left_mark index are initiated at the leftmost index available (ie
     not the pivot) and a right_mark at the rightmost. The left_mark is shifted
     right as long as a[left_mark] < pivot and the right_mark left as long as
     a[right_mark] > pivot. If left_mark < right_mark, the values at which the
