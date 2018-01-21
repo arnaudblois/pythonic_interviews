@@ -8,7 +8,6 @@ Note that this is already implemented in Numpy Rot90
 """
 
 from math import ceil
-from pprint import pprint
 
 
 def rotate_90(matrix):
@@ -20,11 +19,11 @@ def rotate_90(matrix):
     """
     N = len(matrix)
     for i in range(ceil(N/2)):
-            lim = N - i - 1
-            for step in range(N - 2 * i - 1):
-                current_value = matrix[i][i + step]
-                matrix[i][i + step] = matrix[i + step][lim]
-                matrix[i + step][lim] = matrix[lim][lim - step]
-                matrix[lim][lim - step] = matrix[lim - step][i]
-                matrix[lim - step][i] = current_value
+        lim = N - i - 1
+        for step in range(N - 2 * i - 1):
+            current_value = matrix[i][i + step]
+            matrix[i][i + step] = matrix[i + step][lim]
+            matrix[i + step][lim] = matrix[lim][lim - step]
+            matrix[lim][lim - step] = matrix[lim - step][i]
+            matrix[lim - step][i] = current_value
     return matrix

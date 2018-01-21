@@ -20,7 +20,7 @@ def is_rotated_string_naive(s1, s2):
     s1, s2 = s1.lower(), s2.lower()
     length = len(s1)
     if s1 == '' and s2 == '':
-        return True  #  Convention: '' in '' evaluates to True
+        return True  # Convention: '' in '' evaluates to True
     if not len(s2) == length:
         return False
     is_rotated = False
@@ -33,7 +33,7 @@ def is_rotated_string(s1, s2):
     """
     The pythonic solution is found by considering the clue: use "in" only once.
     Assuming the string is rotated, it can be thought as being split in this way
-    s1 = part1 + part2 and s2 = part2 + part1. We can notice that s2 + s2 =
+    s1 = part1 + part2 and s2 = part2 + part1. We can notice that s2 + s1 =
     part2 + part1 + part2 + part1 = part2 + s1 + part1
     -> s1 in s2 + s2 is the answer we need, this comparison is done is O(n)
     """

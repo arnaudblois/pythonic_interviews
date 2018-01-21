@@ -35,6 +35,10 @@ To get more info about coverage and such::
 
     pytest --cov-report term-missing --cov=. --verbose
 
+Continuous Integration testing is done by Travis
+
+.. image:: https://travis-ci.org/arnaudblois/pythonic_interviews.svg?branch=master
+    :alt: build-status
 
 
 Contributing

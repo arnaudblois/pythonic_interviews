@@ -6,7 +6,7 @@ Problem 1 from CtCI
 determines if all characters in a string are unique
 """
 
-import structures
+
 from collections import Counter
 
 

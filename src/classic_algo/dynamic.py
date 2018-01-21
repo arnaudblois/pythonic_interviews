@@ -23,14 +23,13 @@ A few typical example are presented in this module.
 """
 
 
-from utils.decorators import Memoize
+from src.utils.decorators import Memoize
 import math
-import pdb
 
 
 def max_subarray(array):
     """
-    finds the contiguous subarray of an array which as the largest sum.
+    finds the contiguous subarray of an array which has the largest sum.
     >>> max_subarray([3, -2, 1, 5, 1, -2, 2, 4])
     12
     >>> max_subarray([3, -2, 1, 5, 1, -30, 2, 4])
@@ -71,9 +70,9 @@ def solve_knapsack(items, max_weight):
     raise NotImplementedError
 
 
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 #  Change Making algorithms
-#------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------
 
 
 def change_making_greedy(target, coin_set):
@@ -145,7 +144,7 @@ def change_making_bottom_up(target, coin_set):
         # (this may not be the case for some sets not containing 1)
         if minimum_coin:
             best_combo[change] = (best_combo[change - minimum_coin] +
-                                   [minimum_coin])
+                                  [minimum_coin])
             coin_count[change] = coin_count[change - minimum_coin] + 1
 
     return best_combo[target]

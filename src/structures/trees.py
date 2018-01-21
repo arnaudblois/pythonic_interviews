@@ -18,7 +18,7 @@ class Node:
     """
     Nodes contain a key and may carry some extra data called payload
     """
-    def __init__(key, payload=None):
+    def __init__(self, key, payload=None):
         self.key = key
         self.payload = payload
 

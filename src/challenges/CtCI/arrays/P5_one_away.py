@@ -16,7 +16,6 @@ from collections import Counter
 
 def is_one_letter_away(string1, string2):
     """
-
     We use the difference of counters, making sure there is at most one letter
     with a count > 0
     """

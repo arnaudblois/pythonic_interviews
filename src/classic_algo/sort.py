@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 """
 Module containing the most common sorting algorithms
     - bubble sort
@@ -10,10 +11,10 @@ Module containing the most common sorting algorithms
     - merge sort
     - heapsort
 
-For the record, Python sorted uses by default timsort which is a hybrid stable
-sorting algorithm, running in O(n) for best case (list already sorted) to
-O(n log n). It does so by taking advantage of the fact that real-life lists
-often have some partial ordering.
+For the record, Python built-in `sorted` uses by default timsort which
+is a hybrid stable sorting algorithm, running in O(n) for best case
+(list already sorted) to O(n log n). It does so by taking advantage of
+the fact that real-life lists often have some partial ordering.
 """
 
 
@@ -24,8 +25,8 @@ def bubble_sort(a):
     n-i. The biggest element 'bubbles up' to the n-i position. This runs in
     O(n^2): n-1 passes of O(n) comparisons.
 
-    Note the use of the pythonic swap operation "a, b = b, a", not requiring the
-    use of a temporary storage variable.
+    Note the use of the pythonic swap operation "a, b = b, a", not requiring
+    the use of a temporary storage variable.
     """
     length = len(a)
     for pass_number in range(length):
@@ -37,8 +38,8 @@ def bubble_sort(a):
 
 def short_bubble_sort(a):
     """
-    Variant of the short bubble, taking advantage of the fact we know that if no
-    value has been swaped, the list is sorted and we can return early.
+    Variant of the short bubble, taking advantage of the fact we know that if
+    no value has been swaped, the list is sorted and we can return early.
     """
     length = len(a)
     for pass_number in range(length):
@@ -55,7 +56,7 @@ def short_bubble_sort(a):
 def selection_sort(a):
     """
     Swapping values can be an expensive operation. At the i-th pass, the
-    selection sort finds the largest values and swap it with the value at n - i,
+    selection sort finds the largest values and swap it with the value at n - i
     performing faster than bubble sort. Note this can be shortened same as
     above (not shown here for clarity)
     """
@@ -90,12 +91,10 @@ def insertion_sort(a):
     return a
 
 
-
 def shell_sort(list_to_order):
     """
     """
     raise NotImplementedError
-
 
 
 def merge(a, b):
@@ -150,16 +149,15 @@ def quick_sort(a):
     return a
 
 
-
 def quicksort_helper(a, first, last):
     """
     Helper function splitting the list at the pivot and recursively calling
     itself on the left and right parts of this splitpoint.
     """
     if first < last:
-       split_point = partition_helper(a, first, last)
-       quicksort_helper(a, first, split_point - 1)
-       quicksort_helper(a, split_point + 1, last)
+        split_point = partition_helper(a, first, last)
+        quicksort_helper(a, first, split_point - 1)
+        quicksort_helper(a, split_point + 1, last)
 
 
 def partition_helper(a, first, last):
@@ -188,7 +186,7 @@ def partition_helper(a, first, last):
         if right_mark < left_mark:
             done = True
         else:
-           a[left_mark], a[right_mark] = a[right_mark], a[left_mark]
+            a[left_mark], a[right_mark] = a[right_mark], a[left_mark]
 
     a[first], a[right_mark] = a[right_mark], a[first]
     return right_mark

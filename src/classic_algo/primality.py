@@ -3,6 +3,8 @@ A few simple algorithms regarding primality of numbers.
 ** Section under construction **
 """
 
+from math import ceil
+
 
 def sieve_of_erathosthene(n):
     """

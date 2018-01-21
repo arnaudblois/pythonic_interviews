@@ -1,3 +1,3 @@
 """
-Challenges found on miscellaneous places
+Challenges found in miscellaneous places
 """

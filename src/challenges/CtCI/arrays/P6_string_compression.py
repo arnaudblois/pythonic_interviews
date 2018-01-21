@@ -7,7 +7,7 @@ hhhhh -> h5. If the string is no shorter, keep it unchanged
 >>>  compress(qqqwwwwweerty)
 q3w5e2t1y1
 
-Trivia: oddly enough there a word in English with three consecutive
+Trivia: oddly enough, there are English words with three consecutive
 identical letters but none for which this compression would yield a shorted
 result (closest to succeed is 'aaaaba', some sort of bee)
 (https://en.wikipedia.org/wiki/List_of_words_in_English_with_tripled_letters)_
