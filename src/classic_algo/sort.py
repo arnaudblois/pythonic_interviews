@@ -31,8 +31,8 @@ def bubble_sort(a):
     length = len(a)
     for pass_number in range(length):
         for i in range(1, length - pass_number):
-            if a[i] < a[i-1]:
-                a[i], a[i-1] = a[i-1], a[i]
+            if a[i] < a[i - 1]:
+                a[i], a[i - 1] = a[i - 1], a[i]
     return a
 
 
@@ -45,8 +45,8 @@ def short_bubble_sort(a):
     for pass_number in range(length):
         has_swapped = False
         for i in range(1, length - pass_number):
-            if a[i] < a[i-1]:
-                a[i], a[i-1] = a[i-1], a[i]
+            if a[i] < a[i - 1]:
+                a[i], a[i - 1] = a[i - 1], a[i]
                 has_swapped = True
         if not has_swapped:
             break
@@ -56,7 +56,7 @@ def short_bubble_sort(a):
 def selection_sort(a):
     """
     Swapping values can be an expensive operation. At the i-th pass, the
-    selection sort finds the largest values and swap it with the value at n - i
+    selection sort finds the largest value and swap it with the value at n - i
     performing faster than bubble sort. Note this can be shortened same as
     above (not shown here for clarity)
     """
@@ -121,14 +121,15 @@ def merge(a, b):
 
 def merge_sort(a):
     """
-    Based on the divide and conquer approach, this algorithm runs in O(n log n).
-    The array is split by the middle and each half is recursively sorted using
-    merge_sort. The two sorted halves are then efficiently merged using the
-    helper function above.
+    Based on the divide and conquer approach, this algorithm runs in
+    O(n log n).
+    The array is split by the middle and each half is recursively
+    sorted using merge_sort. The two sorted halves are then efficiently
+    merged using the helper function above.
     """
     if len(a) <= 1:
         return a
-    midpoint = len(a)//2
+    midpoint = len(a) // 2
     left = a[:midpoint]
     right = a[midpoint:]
     a = merge(merge_sort(left), merge_sort(right))

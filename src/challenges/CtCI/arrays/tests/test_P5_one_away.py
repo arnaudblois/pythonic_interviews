@@ -3,7 +3,7 @@ from ..P5_one_away import is_one_letter_away
 
 data_true = [
     ('pale', 'ale'),
-    ('ale',  'pale'),
+    ('ale', 'pale'),
     ('pale', 'bale'),
     ('bale', 'babe'),
     ('Python', 'Jython'),

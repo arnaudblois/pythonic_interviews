@@ -17,7 +17,7 @@ def test_rotate_one_element_true():
 def test_rotate_one_element_false():
     s1, s2 = 'a', 'b'
     assert not is_rotated_string_naive(s1, s2)
-    assert is_rotated_string(s1, s2)
+    assert not is_rotated_string(s1, s2)
 
 
 def test_same_string():

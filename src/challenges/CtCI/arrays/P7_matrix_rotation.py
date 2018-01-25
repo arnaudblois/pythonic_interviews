@@ -18,7 +18,7 @@ def rotate_90(matrix):
     performs the transformation in place, runs in O(n^2)
     """
     N = len(matrix)
-    for i in range(ceil(N/2)):
+    for i in range(ceil(N / 2)):
         lim = N - i - 1
         for step in range(N - 2 * i - 1):
             current_value = matrix[i][i + step]

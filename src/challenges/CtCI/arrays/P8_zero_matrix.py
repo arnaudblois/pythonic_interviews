@@ -45,8 +45,8 @@ def zero_matrix_no_numpy(matrix):
 
 def zero_matrix_numpy(matrix):
     """
-    2nd solution taking advantage of Numpy with its efficient "where" method and
-    more advanced indexing
+    2nd solution taking advantage of Numpy with its efficient `where` method
+    and more advanced indexing.
     """
     if matrix == []:
         return []
