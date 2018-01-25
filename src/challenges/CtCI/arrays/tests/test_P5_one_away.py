@@ -22,6 +22,6 @@ data_false = [
 
 def test_is_one_away():
     for test_string in data_true:
-        assert is_one_letter_away(*test_string) == True
+        assert is_one_letter_away(*test_string)
     for test_string in data_false:
-        assert is_one_letter_away(*test_string) == False
+        assert not is_one_letter_away(*test_string)

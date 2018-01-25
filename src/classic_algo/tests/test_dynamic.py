@@ -71,7 +71,6 @@ def test_change_making_set_without_unit():
     assert change_making_top_down(16, coin_set) == []
 
 
-
 def test_non_canonical_change_making():
     """
     Non-canonical coin set are sets for which the greedy algorithm is not

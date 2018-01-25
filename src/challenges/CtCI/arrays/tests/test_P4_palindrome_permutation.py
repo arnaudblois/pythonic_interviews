@@ -8,8 +8,8 @@ data_false = ['ab', 'abvdef']
 def test_permutations():
     # checking strings which are palindrom permutations
     for test_string in data_true:
-        assert palindrome_permutation(test_string) == True
+        assert palindrome_permutation(test_string)
 
     # strings which are not
     for test_string in data_false:
-        assert palindrome_permutation(test_string) == False
+        assert not palindrome_permutation(test_string)
