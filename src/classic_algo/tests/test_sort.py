@@ -74,8 +74,8 @@ def test_unordered_list():
     assert quick_sort(l1.copy()) == l2
 
 
-def test_duplicated_list():
-    """sorting an unordered list with some duplicate"""
+def test__list_with_duplicates():
+    """sorting an unordered list with some duplicates"""
     l1 = [4, 2, 2, 2, 3, 3, 1, 1]
     l2 = [1, 1, 2, 2, 2, 3, 3, 4]
     assert bubble_sort(l1.copy()) == l2

@@ -39,7 +39,7 @@ def bubble_sort(a):
 def short_bubble_sort(a):
     """
     Variant of the short bubble, taking advantage of the fact we know that if
-    no value has been swaped, the list is sorted and we can return early.
+    no value has been swapped, the list is sorted and we can return early.
     """
     length = len(a)
     for pass_number in range(length):
@@ -167,7 +167,7 @@ def partition_helper(a, first, last):
     not the pivot) and a right_mark at the rightmost. The left_mark is shifted
     right as long as a[left_mark] < pivot and the right_mark left as long as
     a[right_mark] > pivot. If left_mark < right_mark, the values at which the
-    marks are stopped are swaped and the process continues until they cross.
+    marks are stopped are swapped and the process continues until they cross.
     At this point, a[right_mark] and the pivot are swapped and the index of the
     right_mark is returned.
     """
